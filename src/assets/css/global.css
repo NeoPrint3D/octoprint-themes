@@ -4,6 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
+section {
+  @apply z-10;
+}
 .btn {
   @apply rounded-[12px];
 }

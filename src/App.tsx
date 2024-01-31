@@ -36,6 +36,12 @@ function App() {
       thumbnailPath: "/images/thumbs/synthwave84.png",
       cssPath: "/themes/synthwave84.css",
     },
+    {
+      name: "Tokyo Night",
+      description: "A theme inspired by the Tokyo Night.",
+      thumbnailPath: "/images/thumbs/tokyo-night.png",
+      cssPath: "/themes/tokyo-night.css",
+    },
   ];
 
   async function copyImportUrl(cssPath: string) {
@@ -83,8 +89,12 @@ function App() {
           </div>
         </nav>
       </header>
-      <main className="bg-base-200 flex flex-col relative text-white items-center font-body scroll-smooth min-h-[100dvh]">
-        <section className="h-[100dvh] w-screen relative">
+      <main className="bg-base-200 flex flex-col relative text-white items-center font-body scroll-smooth min-h-screen overflow-x-hidden">
+        <section className=" w-screen relative">
+          <div className="absolute h-screen w-full flex justify-center items-end">
+            <div className="bg-gradient-to-tr from-primary to-secondary w-[50rem] h-[15rem] rounded-full translate-y-[10rem]" />
+            <div className="h-full w-full absolute backdrop-blur-[75px] translate-y-[50vh]" />
+          </div>
           <div className="absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center">
             <div
               style={{
@@ -102,7 +112,7 @@ function App() {
           </div>
 
           <div className="flex flex-col justify-center items-center">
-            <div className="hero min-h-[100dvh]">
+            <div className="hero min-h-screen">
               <div className="hero-content text-center">
                 <div className="max-w-md p-7">
                   <h1 className="text-5xl font-bold">Octoprint Themes</h1>
@@ -134,8 +144,8 @@ function App() {
           </div>
         </section>
 
-        <section className="w-screen min-h-[100dvh] relative" ref={themeRef}>
-          <div className="flex justify-center items-center min-h-[100dvh] flex-col py-20">
+        <section className="w-screen min-h-screen relative" ref={themeRef}>
+          <div className="flex justify-center items-center min-h-screen flex-col py-20">
             <div className="relative w-full flex justify-center items-center">
               <h1 className="text-5xl font-bold mb-20">Themes</h1>
             </div>
@@ -183,13 +193,11 @@ function App() {
             </div>
           </div>
         </section>
-        <div className="absolute h-full w-full flex items-center justify-center">
-          <div className="bg-gradient-to-tr from-primary to-secondary w-[50rem] h-[25rem] rounded-full -translate-y-[7.5rem]" />
-        </div>
+
         <div className="absolute h-full w-full flex items-end justify-center">
           <div className="bg-gradient-to-r from-secondary via-primary to-primary w-[50rem] h-[12rem] rounded-t-full " />
+          <div className="h-full w-full absolute backdrop-blur-[75px]" />
         </div>
-        <div className="h-full w-full absolute backdrop-blur-[75px]" />
       </main>
       <footer className="footer p-10 bg-base-200 text-base-content">
         <aside>

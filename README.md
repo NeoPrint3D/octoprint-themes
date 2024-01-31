@@ -1,14 +1,3 @@
-<style>
-    img {
-        max-width: 50%;
-        border-radius: 12px;
-    }
-    h1, h2, h3 {
-        color: #38b7f1;
-    }
-
-</style>
-
 # Octoprint themes
 
 This repository contains a collection of custom CSS themes for OctoPrint. 🎨

@@ -1,4 +1,4 @@
-# Octoprint themes
+# Octoprint themes 🐙
 
 This repository contains a collection of custom CSS themes for OctoPrint. 🎨
 
